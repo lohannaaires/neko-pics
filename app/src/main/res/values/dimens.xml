@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">9dp</dimen>
+    <dimen name="margin_bottom">9dp</dimen>
+    <dimen name="margin_horizontal">5dp</dimen>
+    <dimen name="padding_vertical">10dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+</resources>

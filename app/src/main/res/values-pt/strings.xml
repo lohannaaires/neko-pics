@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NekoPics</string>
-    <string name="cat_image">Cat image</string>
+    <string name="cat_image">Imagem de gato</string>
 </resources>
