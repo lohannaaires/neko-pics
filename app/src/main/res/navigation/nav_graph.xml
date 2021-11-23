@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment" >
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.lohanna.nekopics.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_offlineFragment"
+            app:destination="@id/offlineFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/offlineFragment"
+        android:name="com.lohanna.nekopics.ui.fragments.OfflineFragment"
+        android:label="fragment_offline"
+        tools:layout="@layout/fragment_offline" />
+
+    <fragment
+        android:id="@+id/onlineFragment"
+        android:name="com.lohanna.nekopics.ui.fragments.OnlineFragment"
+        android:label="fragment_online"
+        tools:layout="@layout/fragment_online" />
+
+</navigation>

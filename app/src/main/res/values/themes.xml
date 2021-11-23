@@ -14,4 +14,5 @@
         <!-- Customize your theme here. -->
         <item name="android:windowBackground">?attr/colorOnPrimary</item>
     </style>
+
 </resources>

@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">NekoPics</string>
     <string name="cat_image">Cat image</string>
+    <string name="app_icon">Cat paw icon</string>
 </resources>

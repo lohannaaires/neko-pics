@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
+    app:cardCornerRadius="@dimen/corner_radius" >
+
+    <ImageView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:contentDescription="@string/cat_image"
+        android:scaleType="centerCrop"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.cardview.widget.CardView>
