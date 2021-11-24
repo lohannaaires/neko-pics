@@ -18,6 +18,8 @@ Também foram utilizados:
 
 💡  Para executar, crie o arquivo `apikey.properties` na raiz do projeto e insira sua chave da https://thecatapi.com/.
 
+<img src="D:\Desktop\nekopics.jpeg" alt="nekopics" style="zoom:50%;" />
+
 ## 📌 Requisitos
 
 - ☑️ O aplicativo deve ser desenvolvido em Kotlin;
