@@ -7,7 +7,6 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
 
-
 interface RetrofitService {
 
     @Headers("x-api-key: $API_KEY")

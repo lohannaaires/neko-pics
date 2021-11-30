@@ -3,35 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment" >
+    app:startDestination="@id/mainFragment" >
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.lohanna.nekopics.ui.fragments.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        android:id="@+id/mainFragment"
+        android:name="com.lohanna.nekopics.ui.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_splashFragment_to_onlineFragment"
-            app:destination="@id/onlineFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_splashFragment_to_offlineFragment"
-            app:destination="@id/offlineFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_mainFragment_to_catImageFragment"
+            app:destination="@id/catImageFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/offlineFragment"
-        android:name="com.lohanna.nekopics.ui.fragments.OfflineFragment"
-        android:label="fragment_offline"
-        tools:layout="@layout/fragment_offline" />
-
-    <fragment
-        android:id="@+id/onlineFragment"
-        android:name="com.lohanna.nekopics.ui.fragments.OnlineFragment"
-        android:label="fragment_online"
-        tools:layout="@layout/fragment_online" />
+        android:id="@+id/catImageFragment"
+        android:name="com.lohanna.nekopics.ui.fragments.CatImageFragment"
+        android:label="fragment_cat_image"
+        tools:layout="@layout/fragment_cat_image" >
+        <argument
+            android:name="cat_data"
+            app:argType="com.lohanna.nekopics.model.CatModel"
+            app:nullable="true" />
+    </fragment>
 
 </navigation>

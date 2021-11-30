@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/item"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/image_height"
+        android:layout_height="@dimen/grid_item_height"
         android:contentDescription="@string/cat_image"
         android:scaleType="centerCrop"
         tools:ignore="ImageContrastCheck" />

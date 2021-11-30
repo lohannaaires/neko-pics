@@ -30,9 +30,7 @@ class NekoPicsApp: Application(){
 
 fun checkConnection(): Boolean {
     if (checkForInternet(applicationContext())) {
-        //Toast.makeText(applicationContext(), "Connected", Toast.LENGTH_SHORT).show()
         return true
     }
-    //Toast.makeText(applicationContext(), "Disconnected", Toast.LENGTH_SHORT).show()
     return false
 }

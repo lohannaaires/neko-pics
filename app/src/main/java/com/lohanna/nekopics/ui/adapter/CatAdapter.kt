@@ -17,15 +17,12 @@ class CatAdapter @Inject constructor() : RecyclerView.Adapter<CatAdapter.ViewHol
 
     private val diffUtil = object : DiffUtil.ItemCallback<CatModel>() {
         override fun areItemsTheSame(oldItem: CatModel, newItem: CatModel): Boolean {
-
             return oldItem == newItem
-
         }
 
         override fun areContentsTheSame(oldItem: CatModel, newItem: CatModel): Boolean {
             return oldItem == newItem
         }
-
     }
 
     val differ = AsyncListDiffer(this, diffUtil)
@@ -48,16 +45,15 @@ class CatAdapter @Inject constructor() : RecyclerView.Adapter<CatAdapter.ViewHol
                 it(cat)
             }
         }
-
     }
 
     override fun getItemCount(): Int {
         return differ.currentList.size
     }
 
-    private var setCatClickListener : ((cat: CatModel)->Unit)? = null
+    private var setCatClickListener : ((cat: CatModel) -> Unit)? = null
 
-    fun onCatClicked(listener:(CatModel)->Unit){
+    fun onCatClicked(listener:(CatModel) -> Unit){
         setCatClickListener = listener
     }
 

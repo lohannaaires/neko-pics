@@ -15,6 +15,7 @@
         android:theme="@style/Theme.NekoPics">
         <activity
             android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

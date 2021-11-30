@@ -13,10 +13,6 @@ import com.lohanna.nekopics.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 
-fun hideActionBar(activity: AppCompatActivity) {
-    activity.supportActionBar?.hide()
-}
-
 fun showCustomActionBar(activity: AppCompatActivity) {
     activity.supportActionBar?.show()
     activity.supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
@@ -40,7 +36,6 @@ fun Fragment.logData(message:String) {
 }
 
 fun checkForInternet(context: Context): Boolean {
-
     val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -63,5 +58,4 @@ fun checkForInternet(context: Context): Boolean {
         @Suppress("DEPRECATION")
         return networkInfo.isConnected
     }
-
 }
