@@ -53,7 +53,7 @@ class CatImageFragment: Fragment(R.layout.fragment_cat_image) {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.share, menu)
+        inflater.inflate(R.menu.menu_share, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -64,7 +64,7 @@ class CatImageFragment: Fragment(R.layout.fragment_cat_image) {
                         share()
                     }
                     false -> {
-                        Toast.makeText(context, "Internet connection failed", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, R.string.internet_message, Toast.LENGTH_SHORT).show()
                     }
                 }
                 true

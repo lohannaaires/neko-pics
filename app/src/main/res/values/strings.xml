@@ -3,4 +3,7 @@
     <string name="app_name">NekoPics</string>
     <string name="cat_image">Cat image</string>
     <string name="app_icon">Cat paw icon</string>
+    <string name="internet_message">No internet connection</string>
+    <string name="item_share_title">Share</string>
+    <string name="item_refresh_title">Refresh</string>
 </resources>

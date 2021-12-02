@@ -64,7 +64,6 @@ class MainFragment: Fragment(R.layout.fragment_main) {
                 }
                 is DataHandler.LOADING -> {
                     binding.progressBar.visibility = View.VISIBLE
-                    //Thread.sleep(2000)
                     logData("onViewCreated: LOADING")
                 }
             }
@@ -72,7 +71,7 @@ class MainFragment: Fragment(R.layout.fragment_main) {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu, menu)
+        inflater.inflate(R.menu.menu_refresh, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -83,7 +82,7 @@ class MainFragment: Fragment(R.layout.fragment_main) {
                         viewModel.getCats()
                     }
                     false -> {
-                        Toast.makeText(context,"Internet connection failed",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, R.string.internet_message, Toast.LENGTH_SHORT).show()
                     }
                 }
                 true

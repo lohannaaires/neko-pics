@@ -5,7 +5,7 @@ import com.lohanna.nekopics.di.DBRepository
 import com.lohanna.nekopics.di.NetworkRepository
 import com.lohanna.nekopics.di.Transformer
 import com.lohanna.nekopics.model.CatModel
-import com.lohanna.nekopics.utils.Constants
+import com.lohanna.nekopics.utils.Constants.LIMIT
 import com.lohanna.nekopics.utils.DataHandler
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -23,7 +23,7 @@ class MainViewModel @Inject constructor(
     fun getCats() {
         _catsList.postValue(DataHandler.LOADING())
         viewModelScope.launch {
-            val response = networkRepository.getCats(1, Constants.LIMIT)
+            val response = networkRepository.getCats(1, LIMIT)
             _catsList.postValue(handleResponse(response))
         }
     }
