@@ -18,7 +18,9 @@ Também foram utilizados:
 
 💡  Para executar, crie o arquivo `apikey.properties` na raiz do projeto e insira sua chave da https://thecatapi.com/.
 
-<img src="https://i.imgur.com/sxblCLt.jpg" alt="nekopics" style="zoom: 40%;" />
+<p align="center">
+  <img src="https://i.imgur.com/sxblCLt.jpg" alt="NekoPics Home" width="300px" />
+</p>
 
 ## 📌 Requisitos
 
